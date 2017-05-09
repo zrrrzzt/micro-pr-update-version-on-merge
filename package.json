@@ -1,7 +1,7 @@
 {
   "name": "micro-pr-update-version-on-merge",
   "description": "Listen for pr-merges and update version number",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "license": "MIT",
   "private": true,
   "author": {
@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=7.9.0"
+    "node": ">=7.10.0"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -21,7 +21,7 @@
     "setup": "npm install",
     "standard-fix": "standard --fix",
     "start": "micro",
-    "now-deploy": "npm test && now --npm -E production.env && now alias"
+    "now-deploy": "npm test && now --npm -E tfk.env && now alias"
   },
   "keywords": [
     "microservice",
@@ -38,7 +38,7 @@
   "homepage": "https://github.com/zrrrzzt/micro-pr-update-version-on-merge",
   "now": {
     "alias": [
-      "update.version.github.microservice.nu"
+      "update.version.github.tjeneste.win"
     ],
     "type": "npm"
   },
