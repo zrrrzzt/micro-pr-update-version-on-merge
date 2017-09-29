@@ -1,7 +1,7 @@
 'use strict'
 
 const readFileSync = require('fs').readFileSync
-const marked = require('marked')
+const md = require('markdown-it')()
 const { json, send } = require('micro')
 const repackData = require('./lib/repack-data')
 const getPkg = require('./lib/get-pkg')
@@ -35,7 +35,6 @@ module.exports = async (request, response) => {
     }
   } else {
     const readme = readFileSync('./README.md', 'utf-8')
-    const html = marked(readme)
-    send(response, 200, html)
+    send(response, 200, md.render(readme))
   }
 }
