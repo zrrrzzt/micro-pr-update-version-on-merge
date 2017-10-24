@@ -45,7 +45,7 @@
     "dotenv": "tfk.env"
   },
   "devDependencies": {
-    "ava": "0.22.0",
+    "ava": "0.23.0",
     "coveralls": "3.0.0",
     "micro-dev": "1.2.3",
     "nsp": "2.8.1",
