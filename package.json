@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">=8.6.0"
+    "node": ">=8.9.4"
   },
   "scripts": {
     "test": "standard && nsp check && ava",
@@ -22,7 +22,8 @@
     "standard-fix": "standard --fix",
     "start": "micro",
     "dev": "micro-dev",
-    "now-deploy": "npm test && now --npm && now alias"
+    "now-deploy": "npm test && now && now alias",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [
     "microservice",
@@ -31,18 +32,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/zrrrzzt/micro-pr-update-version-on-merge.git"
+    "url": "git+https://github.com/zrrrzzt/micro-pr-update-version-on-merge.git"
   },
   "bugs": {
     "url": "https://github.com/zrrrzzt/micro-pr-update-version-on-merge/issues"
   },
-  "homepage": "https://github.com/zrrrzzt/micro-pr-update-version-on-merge",
+  "homepage": "https://github.com/zrrrzzt/micro-pr-update-version-on-merge#readme",
   "now": {
     "alias": [
       "update.version.github.tjeneste.win"
     ],
     "type": "npm",
-    "dotenv": "tfk.env"
+    "dotenv": "tfk.env",
+    "engines": {
+      "node": "8.9.4"
+    }
   },
   "devDependencies": {
     "ava": "0.24.0",

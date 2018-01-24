@@ -10,4 +10,4 @@ Listen for pr-merges and update version number in package.json.
 
 [MIT](LICENSE)
 
-![alt text](https://robots.kebabstudios.party/micro-pr-update-version-on-merge.png "Robohash image of micro-pr-update-version-on-merge")
+![Robohash image of micro-pr-update-version-on-merge](https://robots.kebabstudios.party/micro-pr-update-version-on-merge.png "Robohash image of micro-pr-update-version-on-merge")
